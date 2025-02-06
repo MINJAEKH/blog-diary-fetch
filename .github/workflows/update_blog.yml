@@ -19,7 +19,7 @@ jobs:
 
       - name: Open API로 블로그 업데이트
         run: |
-          pip install requests python-dotenv urllib
+          pip install requests python-dotenv urllib3
           python bring_blog.py
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
